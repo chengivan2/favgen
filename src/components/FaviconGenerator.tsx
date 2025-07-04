@@ -190,7 +190,7 @@ const FaviconGenerator: React.FC<FaviconGeneratorProps> = () => {
           
           <div className="relative">
             <input
-              label="Upload Image"
+              aria-label="Upload Image"
               type="file"
               accept="image/*"
               onChange={handleFileUpload}
