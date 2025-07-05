@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useCallback } from 'react';
 import ReactCrop, { Crop, PixelCrop } from 'react-image-crop';
-import { Upload, Download, CheckCircle, XCircle, Image as ImageIcon, Heart } from 'lucide-react';
+import { Upload, Download, CheckCircle, XCircle, Image as ImageIcon, Heart, Link } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 import 'react-image-crop/dist/ReactCrop.css';
 
@@ -370,7 +370,9 @@ const FaviconGenerator: React.FC<FaviconGeneratorProps> = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
               <span>Developed by</span>
-              <span className="font-semibold text-blue-600 dark:text-blue-400">ivanthedev</span>
+              <Link href="https://ivanthedev.pro">
+                <span className="font-semibold text-blue-600 dark:text-blue-400">ivanthedev</span>
+              </Link>
               <span>with</span>
               <Heart className="w-4 h-4 text-red-500 fill-current" />
             </div>
